@@ -24,4 +24,4 @@ include ../../build/project-rules.mk
 
 # Custom rules
 dfu_flash: $(BUILD_TMP)/$(PROJ).bit
-	$(DFU_UTIL) -d 1d50:614a,1d50:614b -a 5 -R -D $<
+	$(DFU_UTIL) -d 1d50:614a,1d50:614b -a 0 -R -D $<
